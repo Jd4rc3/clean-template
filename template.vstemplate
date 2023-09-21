@@ -1,0 +1,44 @@
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Arquitectura limpia</Name>
+        <Description>Arquitectura limpia para los servicios backend de aseguradora solidaria</Description>
+        <Icon>Icon.png</Icon>
+        <ProjectType>CSharp</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+            <SolutionFolder Name="src">
+                <SolutionFolder Name="Application">
+                    <ProjectTemplateLink ProjectName="Application.Host">
+                        src\Application\Application.Host\Application.Host.vstemplate
+                    </ProjectTemplateLink>
+                </SolutionFolder>
+
+                <SolutionFolder Name="Domain">
+                    <ProjectTemplateLink ProjectName="Domain.Model">
+                        src\Domain\Domain.Model\Domain.Model.vstemplate
+                    </ProjectTemplateLink>
+
+                    <ProjectTemplateLink ProjectName="Domain.UseCase">
+                        src\Domain\Domain.UseCase\Domain.UseCase.vstemplate
+                    </ProjectTemplateLink>
+                </SolutionFolder>
+
+                <SolutionFolder Name="Infrastructure">
+                    <SolutionFolder Name="DrivenAdapters">
+                        <ProjectTemplateLink ProjectName="DriveAdapters.SqlServer">
+                            src\Infrastructure\DrivenAdapters\DrivenAdapter.SqlServer\DrivenAdapters.SqlServer.vstemplate
+                        </ProjectTemplateLink>
+                    </SolutionFolder>
+
+                    <SolutionFolder Name="EntryPoints">
+                        <ProjectTemplateLink ProjectName="EntryPoint.Web">
+                            src\Infrastructure\EntryPoints\EntryPoint.Web\EntryPoint.Web.vstemplate
+                        </ProjectTemplateLink>
+                    </SolutionFolder>
+                </SolutionFolder>
+            </SolutionFolder>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>
