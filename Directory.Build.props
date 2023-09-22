@@ -1,3 +1,25 @@
 <Project>
-<Import Project="Build/dependencies.props" />
+    <PropertyGroup Label="SDK Versions">
+        <NetStandardTargetVersion>netstandard2.1</NetStandardTargetVersion>
+        <NetCoreTargetVersion>{TargetFramework}</NetCoreTargetVersion>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Package Versions">
+        <Swashbuckle>6.5.0</Swashbuckle>
+        <MicrosoftExtensions>7.0.1</MicrosoftExtensions>
+        <MicrosoftExtensionsLoggingAbstractions>7.0.1</MicrosoftExtensionsLoggingAbstractions>
+        <MicrosoftExtensionsDependencyInjectionAbstractions>7.0.0</MicrosoftExtensionsDependencyInjectionAbstractions>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Test Package Versions">
+        <Moq>4.18.2</Moq>
+        <xunitextensibilitycore>2.4.2</xunitextensibilitycore>
+        <XUnitPackageVersion>2.4.2</XUnitPackageVersion>
+        <XUnitRunnerVisualstudio>2.4.5</XUnitRunnerVisualstudio>
+        <MicrosoftNETTestSdkPackageVersion>17.3.1</MicrosoftNETTestSdkPackageVersion>
+    </PropertyGroup>
+
+    <PropertyGroup Label="CLI Tools Versions">
+        <DotnetXUnitPackageVersion>2.3.1</DotnetXUnitPackageVersion>
+    </PropertyGroup>
 </Project>

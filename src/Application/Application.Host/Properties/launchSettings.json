@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "$safeprojectname$": {
+    "Application.Host": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",

@@ -10,15 +10,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets"
+      Version="1.19.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Domain\Domain.Model\Domain.Model.csproj" />
     <ProjectReference Include="..\..\Domain\Domain.UseCase\Domain.UseCase.csproj" />
-    <ProjectReference Include="..\..\Infrastructure\DrivenAdapters\DrivenAdapter.SqlServer\DrivenAdapter.SqlServer.csproj" />
-    <ProjectReference Include="..\..\Infrastructure\EntryPoints\EntryPoint.Web\EntryPoint.Web.csproj" />
+    <ProjectReference
+      Include="..\..\Infrastructure\DrivenAdapters\DrivenAdapter.SqlServer\DrivenAdapter.SqlServer.csproj" />
+    <ProjectReference
+      Include="..\..\Infrastructure\EntryPoints\EntryPoint.Web\EntryPoint.Web.csproj" />
   </ItemGroup>
 
 </Project>

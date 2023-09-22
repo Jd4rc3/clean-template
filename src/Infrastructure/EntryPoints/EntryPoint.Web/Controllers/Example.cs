@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace $safeprojectname$.Controllers
+namespace EntryPoint.Web.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]
