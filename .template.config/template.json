@@ -27,12 +27,6 @@
       ],
       "defaultValue": "net6.0",
       "replaces": "{TargetFramework}"
-    },
-    "SqlServerAdapter": {
-      "type": "parameter",
-      "description": "Adaptador de base de datos para SQL Server",
-      "datatype": "bool",
-      "defaultValue": "false"
     }
   },
   "sources": [
