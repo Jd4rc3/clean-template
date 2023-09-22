@@ -1,6 +1,3 @@
-Claro, estaré encantado de ayudarte a crear un archivo README para tu template. Aquí tienes un ejemplo de cómo podría ser:
-
-```markdown
 # Template Solidaria
 
 Este es un template para crear una aplicación con una arquitectura limpia. El template está diseñado para los servicios backend de Aseguradora Solidaria.
@@ -38,12 +35,11 @@ Este template es altamente personalizable. Puedes elegir el framework objetivo p
 Para personalizar estas opciones, puedes pasar flags al comando `dotnet new`. Por ejemplo:
 
 ```bash
-dotnet new arquitecturalimpia -n NombreDelProyecto --Framework net7.0
+dotnet new arquitecturalimpia -n NombreDelProyecto --Framework net6.0
 ```
 
-Este comando creará un nuevo proyecto que apunta a .NET 7.0.
+Este comando creará un nuevo proyecto que apunta a .NET 6.0.
 
-Espero que encuentres útil este template. Si tienes alguna pregunta o sugerencia, no dudes en hacerla.
 ```
 
 TemplateSolidaria
@@ -77,3 +73,4 @@ TemplateSolidaria
 
 14 directories, 13 files
 
+```
