@@ -42,8 +42,11 @@ Este comando creará un nuevo proyecto que apunta a .NET 6.0.
 
 ```
 
-TemplateSolidaria
+Template
 ├── Directory.Build.props
+├── Directory.Packages.props
+├── README.md
+├── TemplateSolidaria.nuspec
 ├── TemplateSolidaria.sln
 └── src
     ├── Application
@@ -69,8 +72,12 @@ TemplateSolidaria
     │           ├── Controllers
     │           │   └── Example.cs
     │           └── EntryPoint.Web.csproj
-    └── template
+    └── Test
+        └── TestProject1
+            ├── TestProject1.csproj
+            ├── UnitTest1.cs
+            └── Usings.cs
 
-14 directories, 13 files
+15 directories, 19 files
 
 ```

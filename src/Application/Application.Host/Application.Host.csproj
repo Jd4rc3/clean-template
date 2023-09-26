@@ -17,10 +17,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Domain\Domain.Model\Domain.Model.csproj" />
     <ProjectReference Include="..\..\Domain\Domain.UseCase\Domain.UseCase.csproj" />
-    <ProjectReference
-      Include="..\..\Infrastructure\DrivenAdapters\DrivenAdapter.SqlServer\DrivenAdapter.SqlServer.csproj" />
-    <ProjectReference
-      Include="..\..\Infrastructure\EntryPoints\EntryPoint.Web\EntryPoint.Web.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\DrivenAdapters\DrivenAdapter.SqlServer\DrivenAdapter.SqlServer.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\EntryPoints\EntryPoint.Web\EntryPoint.Web.csproj" />
   </ItemGroup>
 
 </Project>

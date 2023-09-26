@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace EntryPoint.Web.Controllers
+namespace Soldaria.TemplateSolidaria.EntryPoint.Web.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]
