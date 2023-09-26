@@ -1,0 +1,14 @@
+<Project>
+    <PropertyGroup>
+        <CompanyName>Soldaria</CompanyName>
+        <ProjectName>TemplateSolidaria</ProjectName>
+
+        <Company>$(CompanyName)</Company>
+        <RootNamespace>$(CompanyName).$(ProjectName).$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+
+    </PropertyGroup>
+    <PropertyGroup Label="SDK Versions">
+        <NetStandardTargetVersion>netstandard2.1</NetStandardTargetVersion>
+        <NetCoreTargetVersion>net6.0</NetCoreTargetVersion>
+    </PropertyGroup>
+</Project>

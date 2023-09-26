@@ -1,20 +1,83 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Template Solidaria
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Este es un template para crear una aplicación con una arquitectura limpia. El template está diseñado para los servicios backend de Aseguradora Solidaria.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Estructura del Proyecto
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+El proyecto se divide en varias capas, cada una con su propio propósito:
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+- `src\Application`: Contiene la lógica de la aplicación y coordina las interacciones entre las otras capas.
+- `src\Domain`: Contiene la lógica de negocio y las entidades del dominio.
+- `src\Infrastructure`: Contiene la lógica para interactuar con recursos externos, como bases de datos y servicios web.
+
+Cada capa tiene su propio proyecto en la solución:
+
+- `Application.Host`: Este es el proyecto principal que ejecuta la aplicación.
+- `Domain.Model`: Este proyecto contiene las entidades del dominio.
+- `Domain.UseCase`: Este proyecto contiene la lógica de negocio.
+- `Infrastructure.EntryPoints`: Este proyecto contiene los puntos de entrada a la aplicación, como controladores web.
+- `Infrastructure.DrivenAdapters`: Este proyecto contiene adaptadores para interactuar con recursos externos.
+
+## Uso del Template
+
+Para usar este template, necesitarás .NET Core 3.1 o superior. Puedes crear un nuevo proyecto basado en este template con el siguiente comando:
+
+```bash
+dotnet new arquitecturalimpia -n NombreDelProyecto
+```
+
+Reemplaza `NombreDelProyecto` con el nombre que deseas para tu nuevo proyecto.
+
+## Personalización
+
+Este template es altamente personalizable. Puedes elegir el framework objetivo para tu proyecto y si deseas incluir un adaptador para SQL Server.
+
+Para personalizar estas opciones, puedes pasar flags al comando `dotnet new`. Por ejemplo:
+
+```bash
+dotnet new arquitecturalimpia -n NombreDelProyecto --Framework net6.0
+```
+
+Este comando creará un nuevo proyecto que apunta a .NET 6.0.
+
+```
+
+Template
+├── Directory.Build.props
+├── Directory.Packages.props
+├── README.md
+├── TemplateSolidaria.nuspec
+├── TemplateSolidaria.sln
+└── src
+    ├── Application
+    │   └── Application.Host
+    │       ├── Application.Host.csproj
+    │       ├── Dockerfile
+    │       ├── Program.cs
+    │       ├── Properties
+    │       │   └── launchSettings.json
+    │       ├── appsettings.Development.json
+    │       └── appsettings.json
+    ├── Domain
+    │   ├── Domain.Model
+    │   │   └── Domain.Model.csproj
+    │   └── Domain.UseCase
+    │       └── Domain.UseCase.csproj
+    ├── Infrastructure
+    │   ├── DrivenAdapters
+    │   │   └── DrivenAdapter.SqlServer
+    │   │       └── DrivenAdapter.SqlServer.csproj
+    │   └── EntryPoints
+    │       └── EntryPoint.Web
+    │           ├── Controllers
+    │           │   └── Example.cs
+    │           └── EntryPoint.Web.csproj
+    └── Test
+        └── TestProject1
+            ├── TestProject1.csproj
+            ├── UnitTest1.cs
+            └── Usings.cs
+
+15 directories, 19 files
+
+```
