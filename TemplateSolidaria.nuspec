@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
 
-        <id>WebApp.Solution.Template</id>
+        <id>Solidaria.WebApp.Solution.Template</id>
         <version>0.1.0</version>
         <title>Arquitectura limpia aseguradora solidaria</title>
         <authors>Aseguradora solidaria</authors>
@@ -98,6 +98,9 @@
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <tags>clean-architecture project template csharp dotnet</tags>
         <icon>icon.png</icon>
+        <iconUrl>
+            https://github.com/Jd4rc3/clean-template/blob/5fd025fecd6775ee7384ada1f9129570fd949d3a/.template.config/icon.png?raw=true
+        </iconUrl>
 
         <projectUrl>
             https://CASProyectos@dev.azure.com/CASProyectos/OmniCanalidad%20y%20Cliente%20360%20-%20CRM/_git/APITemplate
@@ -105,6 +108,8 @@
 
         <repository type="git"
                     url="https://CASProyectos@dev.azure.com/CASProyectos/OmniCanalidad%20y%20Cliente%20360%20-%20CRM/_git/APITemplate"/>
+
+	    <readme>README.md</readme>
 
         <packageTypes>
             <packageType name="Template"/>
@@ -116,7 +121,7 @@
         <file src=".template.config\icon.png"/>
         <file src="README.md"/>
         <file src=".\**" target="content"
-              exclude="**\node_modules\**;**\bin\**;**\obj\**;.\.vs\**;.\.idea\**;.\.vscode\**;**\ClientApp\dist\**;**\wwwroot\dist\**;content\Directory.Build.*;.\.git\**;.\.github\workflows\package.yml;.\.github\workflows\codeql.yml;.\.github\ISSUE_TEMPLATE\**;.\.github\icon.png;.\CODE_OF_CONDUCT.md;.\LICENSE;.\README.md;"/>
+              exclude="**\node_modules\**;**\*.nuspec;**\*.nupkg;**\bin\**;**\obj\**;.\.vs\**;.\.idea\**;.\.vscode\**;**\ClientApp\dist\**;**\wwwroot\dist\**;content\Directory.Build.*;.\.git\**;.\.github\workflows\package.yml;.\.github\workflows\codeql.yml;.\.github\ISSUE_TEMPLATE\**;.\.github\icon.png;.\CODE_OF_CONDUCT.md;.\LICENSE;.\README.md;"/>
     </files>
 
 </package>

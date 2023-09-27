@@ -19,6 +19,21 @@ builder.Services.AddDbContext<Context>(options =>
 
 var app = builder.Build();
 
+// Este codigo es simplemente de ejemplo eliminarlo cuando se empiece a trabajar en el proyecto
+
+#region Ejemplo
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<Context>();
+
+    // Asegúrate de que la base de datos esté creada.
+    context.Database.EnsureCreated();
+}
+
+#endregion
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
