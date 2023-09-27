@@ -1,6 +1,6 @@
 # Template Solidaria
 
-Este es un template para crear una aplicación con una arquitectura limpia. El template está diseñado para los servicios backend de Aseguradora Solidaria.
+Este template es para crear una aplicación con una arquitectura limpia. El template está diseñado para los servicios backend de Aseguradora Solidaria.
 
 ## Estructura del Proyecto
 
