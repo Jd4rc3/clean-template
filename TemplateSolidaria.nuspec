@@ -1,31 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
-  <metadata>
+    <metadata>
 
-    <id>Clean.Architecture.Solution.Template</id>
-    <version>1.0.0</version>
-    <title>Arquitectura limpia aseguradora solidaria</title>
-    <authors>Aseguradora solidaria</authors>
-    <description>Arquitectura limpia para los servicios backend de aseguradora solidaria</description>
-    <summary>
-      Arquitectura limpia para los servicios backend de aseguradora solidaria
-    </summary>
-    
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <tags>clean-architecture project template csharp dotnet</tags>
-    <icon>icon.png</icon>
-    <readme>README.md</readme>
+        <id>Solidaria.WebApp.Solution.Template</id>
+        <version>0.1.0</version>
+        <title>Arquitectura limpia aseguradora solidaria</title>
+        <authors>Aseguradora solidaria</authors>
+        <description>
+            # Template Solidaria
 
-    <packageTypes>
-      <packageType name="Template" />
-    </packageTypes>
+            Este template es para crear una aplicación con una arquitectura limpia. El template está diseñado para los servicios backend de Aseguradora Solidaria.
 
-  </metadata>
+            ## Estructura del Proyecto
 
-  <files>
-    <file src=".template.config\icon.png" />
-    <file src="README.md" />
-    <file src=".\**" target="content" exclude="**\node_modules\**;**\bin\**;**\obj\**;.\.vs\**;.\.vscode\**;**\ClientApp\dist\**;**\wwwroot\dist\**;content\Directory.Build.*;.\.git\**;.\.github\workflows\package.yml;.\.github\workflows\codeql.yml;.\.github\ISSUE_TEMPLATE\**;.\.github\icon.png;.\CODE_OF_CONDUCT.md;.\LICENSE;.\README.md;" />
-  </files>
+            El proyecto se divide en varias capas, cada una con su propio propósito:
+
+            - `src\Application`: Contiene la lógica de la aplicación y coordina las interacciones entre las otras capas.
+            - `src\Domain`: Contiene la lógica de negocio y las entidades del dominio.
+            - `src\Infrastructure`: Contiene la lógica para interactuar con recursos externos, como bases de datos y servicios web.
+
+            Cada capa tiene su propio proyecto en la solución:
+
+            - `Application.Host`: Este es el proyecto principal que ejecuta la aplicación.
+            - `Domain.Model`: Este proyecto contiene las entidades del dominio.
+            - `Domain.UseCase`: Este proyecto contiene la lógica de negocio.
+            - `Infrastructure.EntryPoints`: Este proyecto contiene los puntos de entrada a la aplicación, como controladores web.
+            - `Infrastructure.DrivenAdapters`: Este proyecto contiene adaptadores para interactuar con recursos externos.
+
+            ## Uso del Template
+
+            Para usar este template, necesitarás .NET Core 3.1 o superior. Puedes crear un nuevo proyecto basado en este template con el siguiente comando:
+
+            ```bash
+            dotnet new arquitecturalimpia -n NombreDelProyecto
+            ```
+
+            Reemplaza `NombreDelProyecto` con el nombre que deseas para tu nuevo proyecto.
+
+            ## Personalización
+
+            Este template es altamente personalizable. Puedes elegir el framework objetivo para tu proyecto y si deseas incluir un adaptador para SQL Server.
+
+            Para personalizar estas opciones, puedes pasar flags al comando `dotnet new`. Por ejemplo:
+
+            ```bash
+            dotnet new arquitecturalimpia -n NombreDelProyecto --Framework net6.0
+            ```
+
+            Este comando creará un nuevo proyecto que apunta a .NET 6.0.
+
+            ```
+
+            Template
+            ├── Directory.Build.props
+            ├── Directory.Packages.props
+            ├── README.md
+            ├── TemplateSolidaria.nuspec
+            ├── TemplateSolidaria.sln
+            └── src
+            ├── Application
+            │   └── Application.Host
+            │       ├── Application.Host.csproj
+            │       ├── Dockerfile
+            │       ├── Program.cs
+            │       ├── Properties
+            │       │   └── launchSettings.json
+            │       ├── appsettings.Development.json
+            │       └── appsettings.json
+            ├── Domain
+            │   ├── Domain.Model
+            │   │   └── Domain.Model.csproj
+            │   └── Domain.UseCase
+            │       └── Domain.UseCase.csproj
+            ├── Infrastructure
+            │   ├── DrivenAdapters
+            │   │   └── DrivenAdapter.SqlServer
+            │   │       └── DrivenAdapter.SqlServer.csproj
+            │   └── EntryPoints
+            │       └── EntryPoint.Web
+            │           ├── Controllers
+            │           │   └── Example.cs
+            │           └── EntryPoint.Web.csproj
+            └── Test
+            └── TestProject1
+            ├── TestProject1.csproj
+            ├── UnitTest1.cs
+            └── Usings.cs
+
+            15 directories, 19 files
+
+            ```
+        </description>
+        <summary>
+            Arquitectura limpia para los servicios backend de aseguradora solidaria
+        </summary>
+
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <tags>clean-architecture project template csharp dotnet</tags>
+        <icon>icon.png</icon>
+        <iconUrl>
+            https://github.com/Jd4rc3/clean-template/blob/5fd025fecd6775ee7384ada1f9129570fd949d3a/.template.config/icon.png?raw=true
+        </iconUrl>
+
+        <projectUrl>
+            https://CASProyectos@dev.azure.com/CASProyectos/OmniCanalidad%20y%20Cliente%20360%20-%20CRM/_git/APITemplate
+        </projectUrl>
+
+        <repository type="git"
+                    url="https://CASProyectos@dev.azure.com/CASProyectos/OmniCanalidad%20y%20Cliente%20360%20-%20CRM/_git/APITemplate"/>
+
+	    <readme>README.md</readme>
+
+        <packageTypes>
+            <packageType name="Template"/>
+        </packageTypes>
+
+    </metadata>
+
+    <files>
+        <file src=".template.config\icon.png"/>
+        <file src="README.md"/>
+        <file src=".\**" target="content"
+              exclude="**\node_modules\**;**\*.nuspec;**\*.nupkg;**\bin\**;**\obj\**;.\.vs\**;.\.idea\**;.\.vscode\**;**\ClientApp\dist\**;**\wwwroot\dist\**;content\Directory.Build.*;.\.git\**;.\.github\workflows\package.yml;.\.github\workflows\codeql.yml;.\.github\ISSUE_TEMPLATE\**;.\.github\icon.png;.\CODE_OF_CONDUCT.md;.\LICENSE;.\README.md;"/>
+    </files>
 
 </package>

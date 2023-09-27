@@ -5,13 +5,15 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{20038BD8-987A-4529-A13A-897A5DF3D561}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{F4760DB7-E307-42E1-B40F-AB18AFCA386B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Host", "src\Application\Application.Host\Application.Host.csproj", "{BA058C33-B3A4-482A-B360-9AA37A53CE9B}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{8D95EA04-8315-4A87-8068-C5C8D4D9F605}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Model", "src\Domain\Domain.Model\Domain.Model.csproj", "{11E291B8-8456-4126-89B2-EFC5DA390D8F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.UseCase", "src\Domain\Domain.UseCase\Domain.UseCase.csproj", "{2643F86B-2E70-4962-8497-B4E2DFDFFEA9}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{F4760DB7-E307-42E1-B40F-AB18AFCA386B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{5982A425-2ECC-4D58-8D51-A1769F9D5109}"
 EndProject
@@ -22,8 +24,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrivenAdapter.SqlServer", "src\Infrastructure\DrivenAdapters\DrivenAdapter.SqlServer\DrivenAdapter.SqlServer.csproj", "{B1B72D97-6714-4584-B80A-ADBD5ACD40FA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntryPoint.Web", "src\Infrastructure\EntryPoints\EntryPoint.Web\EntryPoint.Web.csproj", "{3D067876-88E5-46F5-AEEF-F3EFBE796E90}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Host", "src\Application\Application.Host\Application.Host.csproj", "{BA058C33-B3A4-482A-B360-9AA37A53CE9B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{90B04D99-A620-437B-AE49-5DF949F3C7AC}"
 EndProject
