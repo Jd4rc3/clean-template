@@ -22,21 +22,11 @@ Cada capa tiene su propio proyecto en la solución:
 
 Para usar este template, necesitarás .NET Core 3.1 o superior. Puedes crear un nuevo proyecto basado en este template con el siguiente comando:
 
-```bash
-dotnet new arquitecturalimpia -n NombreDelProyecto
+```powershell
+dotnet new webappsln -n NombreDelProyecto
 ```
 
 Reemplaza `NombreDelProyecto` con el nombre que deseas para tu nuevo proyecto.
-
-## Personalización
-
-Este template es altamente personalizable. Puedes elegir el framework objetivo para tu proyecto y si deseas incluir un adaptador para SQL Server.
-
-Para personalizar estas opciones, puedes pasar flags al comando `dotnet new`. Por ejemplo:
-
-```bash
-dotnet new arquitecturalimpia -n NombreDelProyecto --Framework net6.0
-```
 
 Este comando creará un nuevo proyecto que apunta a .NET 6.0.
 
