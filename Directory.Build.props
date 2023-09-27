@@ -11,7 +11,7 @@
         <NetStandardTargetVersion>netstandard2.1</NetStandardTargetVersion>
         <NetCoreTargetVersion>net6.0</NetCoreTargetVersion>
     </PropertyGroup>
-	
-	<PropertyGroup Label="Package Versions">
-	</PropertyGroup>
+
+    <PropertyGroup Label="Package Versions">
+    </PropertyGroup>
 </Project>
