@@ -4,31 +4,15 @@
   "classifications": ["Web"],
   "identity": "solidaria.arquitecturalimpia",
   "name": "Arquitectura Limpia",
+  "defaultName": "ExampleApi",
   "description": "Arquitectura limpia para los servicios backend de aseguradora solidaria",
-  "shortName": "arquitecturalimpia",
+  "shortName": "webappsln",
   "tags": {
     "language": "C#",
-    "type": "project"
+    "type": "solution"
   },
   "sourceName": "TemplateSolidaria",
   "preferNameDirectory": true,
-  "symbols": {
-    "Framework": {
-      "type": "parameter",
-      "description": "El framework sobre el que se va a construir la aplicación",
-      "datatype": "choice",
-      "choices": [
-        {
-          "choice": "net6.0"
-        },
-        {
-          "choice": "net7.0"
-        }
-      ],
-      "defaultValue": "net6.0",
-      "replaces": "{TargetFramework}"
-    }
-  },
   "sources": [
     {
       "exclude": [

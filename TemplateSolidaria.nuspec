@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
 
-    <id>Clean.Architecture.Solution.Template</id>
+    <id>WebApp.Solution.Template</id>
     <version>1.0.0</version>
     <title>Arquitectura limpia aseguradora solidaria</title>
     <authors>Aseguradora solidaria</authors>
@@ -10,7 +10,7 @@
     <summary>
       Arquitectura limpia para los servicios backend de aseguradora solidaria
     </summary>
-    
+
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>clean-architecture project template csharp dotnet</tags>
     <icon>icon.png</icon>
@@ -25,7 +25,8 @@
   <files>
     <file src=".template.config\icon.png" />
     <file src="README.md" />
-    <file src=".\**" target="content" exclude="**\node_modules\**;**\bin\**;**\obj\**;.\.vs\**;.\.vscode\**;**\ClientApp\dist\**;**\wwwroot\dist\**;content\Directory.Build.*;.\.git\**;.\.github\workflows\package.yml;.\.github\workflows\codeql.yml;.\.github\ISSUE_TEMPLATE\**;.\.github\icon.png;.\CODE_OF_CONDUCT.md;.\LICENSE;.\README.md;" />
+    <file src=".\**" target="content"
+      exclude="**\node_modules\**;**\bin\**;**\obj\**;.\.vs\**;.\.idea\**;.\.vscode\**;**\ClientApp\dist\**;**\wwwroot\dist\**;content\Directory.Build.*;.\.git\**;.\.github\workflows\package.yml;.\.github\workflows\codeql.yml;.\.github\ISSUE_TEMPLATE\**;.\.github\icon.png;.\CODE_OF_CONDUCT.md;.\LICENSE;.\README.md;" />
   </files>
 
 </package>
