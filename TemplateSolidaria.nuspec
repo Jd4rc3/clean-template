@@ -3,14 +3,12 @@
     <metadata>
 
         <id>Solidaria.WebApp.Solution.Template</id>
-        <version>0.2.1</version>
+        <version>0.2.3</version>
         <title>Arquitectura limpia aseguradora solidaria</title>
         <authors>Aseguradora solidaria</authors>
 
         <description>Arquitectura limpia para los servicios backend de aseguradora solidaria. Para
-            saber cómo usar esta plantilla, consulte la &lt;a
-            href="https://dev.azure.com/CASProyectos/OmniCanalidad%20y%20Cliente%20360%20-%20CRM/_wiki/wikis/Plantilla/4/README"&gt;wiki&lt;/a&gt;
-            del proyecto </description>
+            saber cómo usar esta plantilla, consulte la wiki del proyecto https://dev.azure.com/CASProyectos/OmniCanalidad%20y%20Cliente%20360%20-%20CRM/_wiki/wikis/Plantilla/4/README</description>
 
         <summary>Arquitectura limpia para los servicios backend de aseguradora solidaria</summary>
 
