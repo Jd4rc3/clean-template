@@ -18,17 +18,13 @@ Cada capa tiene su propio proyecto en la solución:
 - `Infrastructure.EntryPoints`: Este proyecto contiene los puntos de entrada a la aplicación, como controladores web.
 - `Infrastructure.DrivenAdapters`: Este proyecto contiene adaptadores para interactuar con recursos externos.
 
-## Uso del Template
+## Instalacion el template 
 
-Para usar este template, necesitarás .NET Core 3.1 o superior. Puedes crear un nuevo proyecto basado en este template con el siguiente comando:
+Es necesario configurar las fuentes de los paquetes para poder descargarlos de Azure Artifacts. Para ello es necesario 
 
-```powershell
-dotnet new webappsln -n NombreDelProyecto
-```
+![Alt config packageSource](assets/1.jpg)
 
-Reemplaza `NombreDelProyecto` con el nombre que deseas para tu nuevo proyecto.
 
-Este comando creará un nuevo proyecto que apunta a .NET 6.0.
 
 ```
 
