@@ -28,8 +28,6 @@
         <repository type="git"
                     url="https://CASProyectos@dev.azure.com/CASProyectos/OmniCanalidad%20y%20Cliente%20360%20-%20CRM/_git/APITemplate"/>
 
-	    <readme>README.md</readme>
-
         <packageTypes>
             <packageType name="Template"/>
         </packageTypes>
