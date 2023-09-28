@@ -3,34 +3,39 @@
     <metadata>
 
         <id>Solidaria.WebApp.Solution.Template</id>
-        <version>0.2.0</version>
+        <version>0.2.1</version>
         <title>Arquitectura limpia aseguradora solidaria</title>
         <authors>Aseguradora solidaria</authors>
 
-	<description>Arquitectura limpia para los servicios backend de aseguradora solidaria. Para saber cómo usar esta plantilla, consulte la wiki del proyecto https://dev.azure.com/CASProyectos/OmniCanalidad%20y%20Cliente%20360%20-%20CRM/_wiki/wikis/Plantilla/4/README</description>
+        <description>Arquitectura limpia para los servicios backend de aseguradora solidaria. Para
+            saber cómo usar esta plantilla, consulte la &lt;a
+            href="https://dev.azure.com/CASProyectos/OmniCanalidad%20y%20Cliente%20360%20-%20CRM/_wiki/wikis/Plantilla/4/README"&gt;wiki&lt;/a&gt;
+            del proyecto </description>
 
         <summary>Arquitectura limpia para los servicios backend de aseguradora solidaria</summary>
 
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <tags>clean-architecture project template csharp dotnet</tags>
         <icon>icon.png</icon>
-        <iconUrl>https://github.com/Jd4rc3/clean-template/blob/5fd025fecd6775ee7384ada1f9129570fd949d3a/.template.config/icon.png?raw=true</iconUrl>
+        <iconUrl>
+            https://github.com/Jd4rc3/clean-template/blob/5fd025fecd6775ee7384ada1f9129570fd949d3a/.template.config/icon.png?raw=true</iconUrl>
 
-	<projectUrl>https://dev.azure.com/CASProyectos/OmniCanalidad%20y%20Cliente%20360%20-%20CRM/_git/APITemplate</projectUrl>
+        <projectUrl>
+            https://dev.azure.com/CASProyectos/OmniCanalidad%20y%20Cliente%20360%20-%20CRM/_git/APITemplate</projectUrl>
 
         <repository type="git"
-                    url="https://CASProyectos@dev.azure.com/CASProyectos/OmniCanalidad%20y%20Cliente%20360%20-%20CRM/_git/APITemplate"/>
+            url="https://CASProyectos@dev.azure.com/CASProyectos/OmniCanalidad%20y%20Cliente%20360%20-%20CRM/_git/APITemplate" />
 
         <packageTypes>
-            <packageType name="Template"/>
+            <packageType name="Template" />
         </packageTypes>
 
     </metadata>
 
     <files>
-        <file src=".template.config\icon.png"/>
+        <file src=".template.config\icon.png" />
         <file src=".\**" target="content"
-              exclude="**\node_modules\**;**\wiki\*;**\*.nuspec;**\*.nupkg;**\bin\**;**\obj\**;.\.vs\**;.\.idea\**;.\.vscode\**;**\ClientApp\dist\**;**\wwwroot\dist\**;content\Directory.Build.*;.\.git\**;.\.github\workflows\package.yml;.\.github\workflows\codeql.yml;.\.github\ISSUE_TEMPLATE\**;.\.github\icon.png;.\CODE_OF_CONDUCT.md;.\LICENSE;.\README.md;"/>
+            exclude="**\node_modules\**;**\wiki\*;**\*.nuspec;**\*.nupkg;**\bin\**;**\obj\**;.\.vs\**;.\.idea\**;.\.vscode\**;**\ClientApp\dist\**;**\wwwroot\dist\**;content\Directory.Build.*;.\.git\**;.\.github\workflows\package.yml;.\.github\workflows\codeql.yml;.\.github\ISSUE_TEMPLATE\**;.\.github\icon.png;.\CODE_OF_CONDUCT.md;.\LICENSE;.\README.md;" />
     </files>
 
 </package>
