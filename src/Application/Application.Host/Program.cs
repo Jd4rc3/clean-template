@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 using Soldaria.TemplateSolidaria.Application.Host.Extensions;
 using Soldaria.TemplateSolidaria.DrivenAdapter.SqlServer;
 
@@ -17,9 +18,16 @@ builder.Services.AddApplicationServices();
 builder.Services.AddDbContext<Context>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+#region Serilog
+
+builder.Host.UseSerilog((hostingContext, loggerConfiguration) =>
+    loggerConfiguration.ReadFrom.Configuration(hostingContext.Configuration));
+
+#endregion
+
 var app = builder.Build();
 
-// Este codigo es simplemente de ejemplo eliminarlo cuando se empiece a trabajar en el proyecto
+// Este codigo es simplemente de ejemplo por favor eliminarlo cuando se empiece a trabajar en el proyecto
 
 #region Ejemplo
 
