@@ -22,11 +22,28 @@ Cada capa tiene su propio proyecto en la solución:
 
 Es necesario configurar las fuentes de los paquetes para poder descargarlos de Azure Artifacts.
 
+# IMPORTANTE ⚠️
+
+Es necesario instalar el credential provider de azure para poder descargar los paquetes de artifacts.
+
+Para instalarlo ejecuta en powershell esta expresión (Herramintas > Linea de comandos > Powershell)
+
+```powershell
+iex "& { $(irm https://aka.ms/install-artifacts-credprovider.ps1) }"
+```
+
+![commandLine menu](assets/0.jpg)
+![pwsh expression](assets/pwsh.jpg)
+
+Para más información visita su repositorio de [github](https://github.com/microsoft/artifacts-credprovider#setup)
+
+---
+
 Primero necesitamos saber el nombre y la url del feed que vamos a agregar. Esto lo podemos consultar en azure artifacts.
 
-![Alt config packageSource](assets/1.jpg)
-![Alt config packageSource](assets/2.jpg)
-![Alt config packageSource](assets/3.jpg)
+![azure aritfacts](assets/1.jpg)
+![azure aritfacts](assets/2.jpg)
+![azure aritfacts](assets/3.jpg)
 
 ---
 
